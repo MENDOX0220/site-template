@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>사이트 템플릿</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asdf.css">
+    </link>
+
+</head>
+
+<body>
+    <div id="scrollCurrent"></div>
+    <header>
+        <div class="topBar">
+            <div style="flex:1;">
+                <p class="topBar-left" onclick="gotoo('first-sec')">
+                    사이트 템플릿
+                </p>
+            </div>
+            <div style="flex:1;">
+                <p class="topBar-middle">
+                    메인 로고
+                </p>
+            </div>
+            <div style="flex:1;">
+                <p class="topBar-right">
+                    <span class="topBar-right-contents" onclick="gotoo('second-sec')">문장 1</span>
+                    <span class="topBar-right-contents" onclick="gotoo('second-sec-2')">문장 2</span>
+                    <span class="topBar-right-contents" onclick="gotoo('second-sec-3')">문장 3</span>
+                    <span class="topBar-right-contents" onclick="scrollToHon()  ">문장 4</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section id="first-sec">
+        <article class="main">
+            <div class="main-top">
+                <p class="main-content">Park.</p>
+                <p class="main-content">Chang</p>
+                <p class="main-content">Woo</p><br>
+                <p class="main-content-last">부제</p>
+            </div>
+
+        </article>
+    </section>
+
+    <section id="second-sec">
+        <header class="name">
+            주제 1
+        </header>
+        <article class="content">
+            <div class="aa">사진</div>
+            <p>설명 1</p>
+        </article>
+        <article class="content">
+            <p>설명 2</p>
+            <div class="aa">사진</div>
+        </article>
+        <article class="content">
+            <div class="aa">사진</div>
+            <p>설명 3</p>
+        </article>
+        <header class="name">주제 2</header>
+        <article class="content" style="flex-direction: column;">
+            <div>
+                <div class="aa1">사진</div>
+            </div>
+            <div>
+                <p id="wepDevelop">설명(클릭 이벤트)</p>
+                <p id="hiki">클릭 이벤트 문장</p>
+            </div>
+        </article>
+    </section>
+
+
+    <section id="second-sec-2">
+        <header class="name-iwop">주제</header>
+        <article id="iwop-contents">
+            <div class="iwop-content-name">소개</div>
+            <div class="iwop-content">
+                <p id="iwop1">
+                    소개(클릭 이벤트)
+                </p>
+
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <p id="iwop2" style="color: rgb(49, 168, 247)">
+                        설명(아래 사진 동영상 샘플)
+                    </p>
+                    <video src="./img/ii.mp4" controls id="videos"></video>
+                    <img src="./img/ddf.jpg" alt="" id="iwop-cimg">
+                </div>
+        </article>
+    </section>
+    <div class="iwop-content-picture">
+        <div>
+            <img src="./img/heao.png" alt="" id="jong">
+            <p>설명(사진 샘플 + 사진 클릭 이벤트)</p>
+            <p id="jongss">빠른 보이기 설명</p>
+        </div>
+        <div>
+            <img src="./img/jin.jpg" alt="" id="jin">
+            <p>설명(사진 샘플)</p>
+        </div>
+    </div>
+
+    <section id="second-sec-3">
+
+        <header class="name">주제</header>
+
+        <article class="game">
+            <div class="ani-img">사진</div>
+            <p class="game-content" style="font-weight: bold;">설명
+            </p>
+        </article>
+
+        <button class="but" onclick="changer()">더보기</button>
+
+        <div id="gameover">
+            <p class="game-content">부제</p>
+            <div class="aa5">사진(아래 추가 가능)</div>
+            <button class="but" onclick="changer()">닫기</button>
+        </div>
+
+        <div class="box">
+            <div class="inbox" style="border-bottom: 2px solid #124143;"></div>
+            <div class="inbox" style="border-bottom: 2px solid #124143;"></div>
+        </div>
+
+        <article class="game">
+            <div class="ani-img">사진</div>
+            <p class="game-content" style="font-weight: bold;">설명</p>
+        </article>
+
+        <button class="but" onclick="changer1()">더보기</button>
+
+        <div id="gamebattle">
+            <p class="game-content">부제</p>
+            <div class="aa5">사진(아래 추가 가능)</div>
+            <button class="but" onclick="changer1()">닫기</button>
+        </div>
+        <div class="box">
+            <div class="inbox" style="border-bottom: 2px solid #124143;"></div>
+            <div class="inbox" style="border-bottom: 2px solid #124143;"></div>
+        </div>
+
+    </section>
+
+    <footer id="last">
+        <button id="asdf" onclick="honmono('boxx')">더보기</button>
+    </footer>
+
+
+    <div id="boxx"></div>
+    <section id="honmono-sec">
+        <header id="hon-name"><span>주제</span></header>
+        <article class="boxA">
+            <div class="ani-img">사진</div>
+            <p style="width: 100%; text-align: center;">설명</p>
+        </article>
+        <div class="box">
+            <div class="inbox"></div>
+            <div class="inbox"></div>
+        </div>
+        <article class="boxB">
+            <div class="ani-img">사진</div>
+            <p style="width: 100%; text-align: center;">
+                설명
+            </p>
+        </article>
+        <div class="box">
+            <div class="inbox"></div>
+            <div class="inbox"></div>
+        </div>
+        <article class="boxC">
+            <div class="ani-img" style="width: 50vw;">사진</div>
+            <p style="width: 100%; text-align: center;">설명</p>
+        </article>
+        <div class="box">
+            <div class="inbox"></div>
+            <div class="inbox"></div>
+        </div>
+        <article class="boxD">
+            <div class="ani-img" style="width: 50vw;">사진</div>
+            <p style="width: 100%; text-align: center;">설명</p>
+        </article>
+        <div class="box">
+            <div class="inbox"></div>
+            <div class="inbox"></div>
+        </div>
+        <article class="boxE">
+            <div class="ani-img" style="width: 50vw;">사진</div>
+            <p style="width: 100%; text-align: center;">설명</p>
+        </article>
+        <div class="box">
+            <div class="inbox"></div>
+            <div class="inbox"></div>
+        </div>
+        <article class="boxF">
+            <div class="ani-img" style="width: 50vw;">사진</div>
+            <p style="width: 100%; text-align: center;">설명</p>
+        </article>
+        <div style="width: 100vw; height: 10vh;">
+
+        </div>
+    </section>
+
+
+    <script src="asdf.js"></script>
+</body>
+
+</html>
